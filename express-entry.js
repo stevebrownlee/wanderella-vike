@@ -1,7 +1,6 @@
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { createTodoHandler } from "./server/create-todo-handler.js";
 import { vikeHandler } from "./server/vike-handler.js";
 import { createMiddleware } from "@universal-middleware/express";
 import express from "express";
@@ -60,8 +59,6 @@ async function startServer() {
     ).middlewares;
     app.use(viteDevMiddleware);
   }
-
-  app.post("/api/todo/create", handlerAdapter(createTodoHandler));
 
   /**
    * Vike route

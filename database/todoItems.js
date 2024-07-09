@@ -1,7 +1,7 @@
 import { JSONFileSyncPreset } from "lowdb/node";
 
 const lowDb = JSONFileSyncPreset("db.json", {
-  todo: [{ text: "Buy milk" }, { text: "Buy strawberries" }],
+  todo: [{ id: 1, text: "Buy milk" }, { id: 2, text: "Buy strawberries" }],
 });
 
 export { lowDb };

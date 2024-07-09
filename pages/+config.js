@@ -6,7 +6,6 @@ import Layout from "../layouts/LayoutDefault.jsx";
 export default {
   Layout,
   Head,
-  // <title>
-  title: "My Vike App",
+  title: "Wanderella",
   extends: vikeReact,
 }
